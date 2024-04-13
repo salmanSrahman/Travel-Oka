@@ -338,3 +338,72 @@ nav{
 /* ==============================================
             hero banner part css end
 ============================================== */
+/* ==============================================
+            popular tours part css start
+============================================== */
+.popular_tours_part{
+    display: flex;
+    column-gap: 50px;
+}
+.tours_text{
+    width: 50%;
+}
+.tours_image{
+    width: 50%;
+}
+.tours_image img{
+    width: 100%;
+}
+.tours_text p{
+    color: var(--third);
+    width: 530px;
+    margin: 24px 0;
+    
+}
+.tours_text ul{
+    margin-bottom: 24px;
+}
+.tours_text li{
+    color: var(--third);
+    padding-bottom: 16px;
+    
+}
+.tours_text .listItem{
+    padding-left: 15px;
+    position: relative;
+}
+.tours_text .listItem span{
+    width: 6px;
+    height: 6px;
+    background: var(--third);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+/* responsive */
+@media screen and (max-width: 768px){
+    .popular_tours_part{
+       flex-direction: column;
+        row-gap: 24px;
+    }
+    .tours_text{
+        width: 100%;
+    }
+    .tours_image{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tours_text p{
+        width: auto;
+        padding: 5px 10px;
+    }
+    .tours_text .listItem{
+        margin-left: 10px;
+    }
+
+}
+/* ==============================================
+            popular tours part css end
+============================================== */
