@@ -1,0 +1,154 @@
+:root{
+    --primary: #0D80CC;
+    --secondary: #424247;
+    --third: #13131880;
+    --orange: #FF5400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: "Mulish", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, ol,ul, li, p, a{
+    margin: 0;
+    padding: 0;
+    
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+section{
+    margin-top: 130px
+}
+.title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.para{
+    font-size: 16px;
+    line-height: 26px;
+}
+.btn_primary{
+    padding: 16px 35px;
+    background: #FF5400;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ================ common css end =============== */
+
+
+/* ==============================================
+            nav part css start
+============================================== */
+nav{
+    display: flex;
+    padding: 25px 0;
+    align-items: center;
+}
+.nav_logo{
+    width: 25%
+}
+.nav_items{
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_items a{
+    margin-left:44px ;
+    color: var(--secondary);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all linear 0.3s;
+}
+.nav_items a:hover{
+    color: var(--primary);
+}
+.active{
+    color: var(--primary) !important;
+
+}
+.nav_items i{
+   display: none;
+}
+
+/* nav bar responsive */
+
+@media screen and (max-width: 575px){
+    section{
+        margin-top: 40px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .para{
+        font-size: 14px;
+        padding: 5px 10px;
+        width: auto;
+    }
+    .btn_primary{
+        padding: 15px 30px;
+        font-size: 12px;
+        
+    }
+    /* common css responsive */
+
+    .nav_items a{
+        display: none;
+    }
+    .nav_items i{
+        display: block;
+     }
+}
+
+@media screen  and (min-width: 576px) and ( max-width:768px) {
+    section{
+        margin-top: 40px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .para{
+        font-size: 14px;
+        padding: 5px 10px;
+        width: auto;
+    }
+    .btn_primary{
+        padding: 15px 30px;
+        font-size: 14px;
+        
+    }
+    /* common css responsive */
+
+    .nav_items a{
+        display: none;
+    }
+    .nav_items i{
+        display: block;
+     }
+    
+}
+.header{
+    background: gray;
+}
+
+/* ==============================================
+            nav part css end
+============================================== */
