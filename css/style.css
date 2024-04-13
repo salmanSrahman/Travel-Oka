@@ -145,18 +145,16 @@ nav{
      }
     
 }
-.header{
-    background: gray;
-}
 
 /* ==============================================
             nav part css end
 ============================================== */
+
 /* ==============================================
             hero banner part css start
 ============================================== */
 .hero_banner{
-    background: url("../Images/hero_banner.png");
+    background-image: url("../images/hero_banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -407,3 +405,618 @@ nav{
 /* ==============================================
             popular tours part css end
 ============================================== */
+/* ==============================================
+            why choose part css start
+============================================== */
+.why_coose_us_content_inner .title{
+    text-align: center;
+}
+.why_coose_us_content_inner>.para{
+   width: 643px;
+   margin: 24px auto 48px;
+   text-align: center;
+}
+.choose_card_inner{
+   display: flex;
+   column-gap: 24px;
+   row-gap: 24px;
+    flex-wrap: wrap;
+    
+}
+.choose_card{
+    width: 509px;
+    padding: 32px;
+    background: #FFFBF7;
+    border-radius: 16px;
+}
+.choose_card:nth-child(2){
+    background: #F4FDFF;
+}
+.choose_card:last-child{
+    margin: 0 auto;
+}
+.choose_card h3{
+    margin: 32px 0 16px;
+    font-size: 24px;
+    font-weight: 800;
+
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .why_coose_us_content_inner>.para{
+        width: auto;
+     }
+    .choose_card_inner{
+        display: flex;
+        row-gap: 15px;
+         
+     }
+     .choose_card{
+        width: 100%;
+    }
+    .choose_card:nth-child(2){
+        background: #F4FDFF;
+    }
+    .choose_card:last-child{
+        margin: 0 auto;
+    }
+    .choose_card h3{
+        font-size: 20px;
+    
+    }
+    .choose_card p{
+        padding: 0;
+    
+    }
+}
+
+/* ==============================================
+            why choose part css end
+============================================== */
+/* ==============================================
+            deals & discount part css start
+============================================== */
+
+.discount_card_inner{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 48px;
+}
+.discount_part_content_inner .title{
+    text-align: center;
+}
+
+.discount_part_content_inner>.para{
+   width: 643px;
+   margin: 24px auto 48px;
+   text-align: center;
+}
+.discount_card{
+    background-image: url("../images/discount1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 56px;
+    border-radius: 16px;
+}
+.discount_card:nth-child(2){
+    background-image: url("../images/discount2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 56px;
+    border-radius: 16px;
+  
+}
+.discount_text{
+    color: red;
+    background: rgba(255, 255, 255, 0.8);
+    width: 579px;
+    padding: 50px;
+    border-radius: 16px;
+    margin-left: auto;
+    
+}
+.discount_card:nth-child(2) .discount_text{
+    margin-left: 0;
+}
+.discount_text h2{
+    font-size: 24px;
+    color: #131318;
+    font-weight: 800;
+
+}
+.discount_text p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #5A5A5D;
+    margin: 16px 0;
+
+}
+.discount_text h4{
+    font-size: 20px;
+    color: var(--orange);
+    font-weight: 800;
+    margin-bottom: 24px;
+
+}
+.discount_desciption{
+    display: flex;
+    column-gap:24px;
+    margin-bottom: 24px;
+
+}
+.discount_desciption p{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: #5A5A5D;
+    font-size: 16px;
+}
+.discount_desciption p i{
+    color: var(--orange);
+    font-size: 20px;
+
+}
+.discount_part_content_inner button{
+    display: block;
+    margin: 0 auto;
+}
+/* responsive */
+
+@media screen and (max-width:575px){
+    .discount_part_content_inner>.para{
+        width: auto;
+        margin: 24px auto 48px;
+        text-align: center;
+     }
+     .discount_text{
+        width: auto;
+        padding: 30px; 
+    }
+    .discount_desciption{
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    
+    }
+    .discount_text h2{
+        font-size: 14px;
+    
+    }
+    .discount_text p{
+        font-size: 13px;
+    
+    }
+    .discount_text h4{
+        font-size: 13px;
+    
+    }
+}
+
+@media  screen and (min-width:576px) and (max-width: 768px) {
+
+    .discount_part_content_inner>.para{
+        width: auto;
+        margin: 24px auto 48px;
+        text-align: center;
+     }
+     .discount_text{
+        width: auto;
+        padding: 30px; 
+    }
+    .discount_desciption{
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    
+    }
+    .discount_text h2{
+        font-size: 20px;
+    
+    }
+    .discount_text p{
+        font-size: 14px;
+    
+    }
+    .discount_text h4{
+        font-size: 16px;
+    
+    }
+    
+}
+
+
+/* ==============================================
+            deals & discount part css end
+============================================== */
+/* ==============================================
+            perfect place css start
+============================================== */
+.perfect_place_part{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.perfect_place_text{
+    width: 50%;
+}
+.perfect_place_image{
+    width: 50%;
+}
+.perfect_place_image img{
+    width: 100%;
+}
+.perfect_place_text h2{
+    width: 448px;
+}
+.perfect_place_text p{
+    color: var(--third);
+    width: 530px;
+    margin: 24px 0;
+    
+}
+.perfect_place_text ul{
+    margin-bottom: 24px;
+}
+.perfect_place_text li{
+    color: #131318;
+    padding-bottom: 16px;
+    
+}
+.perfect_place_text .listItem{
+    padding-left: 15px;
+    position: relative;
+}
+.perfect_place_text .listItem span{
+    width: 6px;
+    height: 6px;
+    background: #131318;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+/* responsive */
+@media screen and (max-width: 768px){
+    .perfect_place_part{
+       flex-direction: column;
+        row-gap: 24px;
+    }
+    .perfect_place_text{
+        width: 100%;
+    }
+    .perfect_place_image{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .perfect_place_text p{
+        width: auto;
+        padding: 5px 10px;
+    }
+    .perfect_place_text .listItem{
+        margin-left: 10px;
+    }
+    .perfect_place_text h2 {
+        width: auto;
+    }
+}
+/* ==============================================
+            perfect place css end
+============================================== */
+/* ==============================================
+            guides part css start
+============================================== */
+.guides_inner h2{
+    margin-bottom: 48px;
+}
+.guides_places{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.place_card{
+    position: relative;
+    width:18%;
+}
+.place_card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.place_text{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+}
+
+/* responsive */
+@media screen and (max-width:575px){
+    .guides_inner h2{
+        margin-bottom: 24px;
+    }
+    .place_card{
+        width: 48%;
+    }
+    .guides_places{
+        row-gap: 10px;
+        column-gap:10px;
+    }
+    .place_text h3{
+        font-size: 16px;
+    }
+    .place_text h4{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+    .guides_inner h2{
+        margin-bottom: 24px;
+    }
+    .place_card{
+        width: auto;
+    }
+    .guides_places{
+        row-gap: 10px;
+        column-gap:10px;
+    }
+    .place_text h3{
+        font-size: 16px;
+    }
+    .place_text h4{
+        font-size: 14px;
+    }
+    
+}
+
+/* ==============================================
+            guides part css end
+============================================== */
+/* ==============================================
+            newsletter part css start
+============================================== */
+.newsletter_inner{
+    display: flex;
+    column-gap: 44px;
+}
+.newsletter_text{
+    width: 40%;
+    padding: 40px;
+    border: 1px solid var(--orange);
+    border-radius: 16px;
+}
+.newsletter_text p{
+   color: #5A5A5D;
+   font-size: 18px;
+   line-height: 28px;
+   width: 360px;
+   margin: 24px 0;
+}
+.newsletter_image{
+    width: 60%;
+    position: relative;
+}
+.newsletter_image img{
+    width: 100%;
+    height: 100%;
+}
+.newsletter_form{
+    width: 393px;
+}
+.newsletter_form input{
+    background: #f3F3F3;
+    padding: 24PX;
+    border-radius: 8PX;
+    display: block;
+    width: 100%;
+    border: 0;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+
+}
+.newsletter_form input::placeholder{
+    color: #D1D1D2;
+    font-size: 16px;
+
+}
+.newsletter_form button{
+    width:100%;
+
+}
+.newsletter_badge{
+padding: 20px 45px;
+background: var(--orange);
+border-radius: 16px;
+position: absolute;
+right: 15px;
+bottom: 75px;
+transform: rotate(-23deg);
+}
+.newsletter_badge h4{
+    font-size: 24px;
+    color: white;
+
+}
+.newsletter_badge h2{
+    font-size: 32px;
+    color: white;
+    font-weight: 800;
+
+}
+/* responsive */
+@media screen and (max-width: 575px){
+    .newsletter_inner{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    .newsletter_text{
+        padding: 30px;
+        width:100%;
+        box-sizing: border-box;
+    
+    }
+    .newsletter_text p{
+       font-size: 14px;
+       width: auto;
+       margin: 14px 0;
+    }
+    .newsletter_image{
+        width: 100%;
+    }
+    .newsletter_image img{
+        width: 100%;
+        height: 100%;
+    }
+    /* .newsletter_form{
+        width: auto;
+    } */
+    .newsletter_form{
+        width: auto;
+    }
+    .newsletter_form input{
+        padding: 24PX;
+        margin-bottom: 32px;
+        box-sizing: border-box;
+    
+    }
+    .newsletter_form input::placeholder{
+        color: #D1D1D2;
+        font-size: 16px;
+    
+    }
+    .newsletter_form button{
+        width:100%;
+
+    }
+    .newsletter_badge{
+        padding: 15px 25px;
+        border-radius: 16px;
+        position: absolute;
+        right: 15px;
+        bottom: 55px;
+        }
+        .newsletter_badge h4{
+            font-size: 14px;
+        
+        }
+        .newsletter_badge h2{
+            font-size: 22px;
+        
+        }
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px){
+    .newsletter_inner{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    .newsletter_text{
+        padding: 30px;
+        width:100%;
+        box-sizing: border-box;
+    
+    }
+    .newsletter_text p{
+       font-size: 14px;
+       width: auto;
+       margin: 14px 0;
+    }
+    .newsletter_image{
+        width: 100%;
+    }
+    .newsletter_image img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .newsletter_form{
+        width: auto;
+    }
+    .newsletter_form input{
+        padding: 24PX;
+        margin-bottom: 32px;
+        box-sizing: border-box;
+    
+    }
+    .newsletter_form input::placeholder{
+        color: #D1D1D2;
+        font-size: 16px;
+    
+    }
+    .newsletter_form button{
+        width:100%;
+    
+    }
+    
+}
+
+
+/* ==============================================
+            newsletter part css end
+============================================== */
+/* ==============================================
+            footer part css start
+============================================== */
+footer{
+    background: #1C2930;
+    padding: 70px 0 50px;
+    text-align: center;
+    margin-top: 172px;
+}
+.footer_inner > p{
+    color: rgba(255, 255, 255, 0.7);
+    width: 769px;
+    margin: 0 auto 35px;
+}
+.footer_social{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3)
+}
+.footer_social i{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}
+.footer_inner .copyright{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    margin-top: 50px;
+}
+/* responsive */
+@media screen and (max-width: 768px){
+    footer{
+        background: #1C2930;
+        padding: 30px 0 20px;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .footer_inner > p{
+        width: auto;
+        margin: 0 auto 20px;
+        font-size: 14px;
+
+    }
+    .footer_social{
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        padding-bottom: 30px;
+    }
+    .footer_social i{
+        font-size: 16px;
+    }
+    .footer_inner .copyright{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+}
+/* ==============================================
+            footer part css end
+============================================== */
+
